@@ -1,0 +1,1 @@
+;; setting for javascript mode(add-hook 'javascript-mode-hook	  '(lambda ()	     (gtags-mode t)	     (c-set-style "linux")	     (setq tab-width 4)	     (setq indent-tabs-mode t)	     (setq c-basic-offset tab-width))	  )

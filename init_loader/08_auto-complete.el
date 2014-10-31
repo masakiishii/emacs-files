@@ -1,0 +1,1 @@
+(require 'auto-complete)(require 'auto-complete-config)(ac-config-default)(global-auto-complete-mode t)(if window-system (progn(tool-bar-mode nil))) ;hide tool-bar
