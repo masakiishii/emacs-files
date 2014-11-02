@@ -16,7 +16,7 @@ CURRENTDIR=`pwd`
 
 cp ${CURRENTDIR}/.emacs.el ${HOME}/
 
-emacsFileList=("init.el" "init_loader" "elisps" "Cask")
+emacsFileList=("init.el" "init_loader" "elisps" "Cask" "share")
 
 for i in ${emacsFileList[*]}
 do
