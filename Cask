@@ -43,7 +43,8 @@
 ;;(depends-on "yascroll")
 
 ;; Scala
-(depends-on "scala-mode2" :git "https://github.com/hvesalai/scala-mode2.git" :branch "master")
+(depends-on "scala-mode2"  :git "https://github.com/hvesalai/scala-mode2.git" :branch "master")
+
 
 ;; Haskell
 (depends-on "haskell-mode")

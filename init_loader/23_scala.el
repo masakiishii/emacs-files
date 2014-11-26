@@ -8,6 +8,6 @@
 (require 'scala-mode2)
 (require 'ensime)
 
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 (add-to-list 'auto-mode-alist
              '("\\.\\(scala\\|sbt\\)\\'" . scala-mode))
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
