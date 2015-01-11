@@ -45,6 +45,11 @@
 ;; Scala
 (depends-on "scala-mode2"  :git "https://github.com/hvesalai/scala-mode2.git" :branch "master")
 
+;; C#
+(depends-on "csharp-mode")
+
+;; OmniSharp
+(depends-on "omnisharp")
 
 ;; Haskell
 (depends-on "haskell-mode")
@@ -52,7 +57,7 @@
 
 ;;;; Ocaml
 ;;(depends-on "tuareg")
-;;
+
 ;;;; CoffeeScript
 ;;(depends-on "coffee-mode")
 ;;(depends-on "sourcemap")
