@@ -16,13 +16,13 @@
              (flycheck-mode 1)
              (omnisharp-mode)))
 
-(require 'omnisharp)
+;;(require 'omnisharp)
 ;; (setq omnisharp-server-executable-path
 ;;       (expand-file-name "/Users/masaki/.emacs.d/omnisharp-server/OmniSharp/bin/Debug/OmniSharp.exe"))
 
-(defun my-omnisharp-start (sln)
-  (interactive "fOpen sln: ")
-  (omnisharp-start-omnisharp-server (expand-file-name sln)))
+;; (defun my-omnisharp-start (sln)
+;;   (interactive "fOpen sln: ")
+;;   (omnisharp-start-omnisharp-server (expand-file-name sln)))
 
 (define-key omnisharp-mode-map "\C-c\C-s" 'omnisharp-start-omnisharp-server)
 (define-key omnisharp-mode-map "\M-/" 'omnisharp-auto-complete)
