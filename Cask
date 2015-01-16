@@ -51,6 +51,9 @@
 ;; OmniSharp
 (depends-on "omnisharp")
 
+;; dash.el
+(depends-on "dash" :git "https://github.com/magnars/dash.el.git" :ref "2436bf8f")
+
 ;; Haskell
 (depends-on "haskell-mode")
 (depends-on "ghc")
