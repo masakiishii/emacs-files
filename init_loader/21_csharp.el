@@ -18,7 +18,9 @@
 
 (require 'omnisharp)
 (setq omnisharp-server-executable-path
-      (expand-file-name "/Users/masaki/.emacs.d/plugins/OmniSharpServer/OmniSharp/bin/Debug/OmniSharp.exe"))
+      (expand-file-name "/home/masaki/.emacs.d/plugins/OmniSharpServer/OmniSharp/bin/Debug/OmniSharp.exe"))
+;; (setq omnisharp-server-executable-path
+;;       (expand-file-name "/Users/masaki/.emacs.d/plugins/OmniSharpServer/OmniSharp/bin/Debug/OmniSharp.exe"))
 
 (defun my-omnisharp-start (sln)
   (interactive "fOpen sln: ")
