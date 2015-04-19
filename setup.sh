@@ -40,7 +40,7 @@ omnisharp_if_not_exist () {
     local dir=$1
     if [ ! -d $dir ]; then
 	git clone https://github.com/nosami/OmniSharpServer.git ${EMACSDIR}/plugins/OmniSharpServer
-	cd ${EMACSDIR}/plugins/OmniSharpServer && git submodule update --init --recursive
+	cd ${EMACSDIR}/plugins/OmniSharpServer && git submodule update --init --recursive && xbuild
     fi
 }
 
