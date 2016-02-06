@@ -4,11 +4,13 @@
 ;; apel
 ;;(depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
 
-
 ;; auto-complete
 (depends-on "auto-complete")
 (depends-on "fuzzy")
 (depends-on "popup")
+
+;; sequential-command
+(depends-on "sequential-command")
 
 ;; Editing
 ;;(depends-on "thingopt")
