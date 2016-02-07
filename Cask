@@ -60,8 +60,8 @@
 (depends-on "haskell-mode")
 (depends-on "ghc")
 
-;;;; Ocaml
-;;(depends-on "tuareg")
+;; Ocaml
+(depends-on "tuareg")
 
 ;;;; CoffeeScript
 ;;(depends-on "coffee-mode")
