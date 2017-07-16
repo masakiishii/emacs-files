@@ -6,6 +6,11 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
+(require 'haskell-mode)
+(define-key haskell-mode-map "\C-ch" 'haskell-hoogle)
+;(setq haskell-hoogle-command "hoogle")
+
+
 ;;ghc-mod
 (add-to-list 'exec-path "~/.local/bin")
 
