@@ -5,9 +5,15 @@
 ;;(depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
 
 ;; auto-complete
-(depends-on "auto-complete")
-(depends-on "fuzzy")
-(depends-on "popup")
+;;(depends-on "auto-complete")
+;;(depends-on "fuzzy")
+;;(depends-on "popup")
+
+;; company-mode
+(depends-on "company")
+
+;; company-ghc
+(depends-on "company-ghc")
 
 ;; sequential-command
 (depends-on "sequential-command")
@@ -57,11 +63,11 @@
 (depends-on "dash" :git "https://github.com/magnars/dash.el.git" :ref "2436bf8f")
 
 ;; Haskell
-(depends-on "haskell-mode")
-(depends-on "ghc")
+;;(depends-on "haskell-mode")
+;;(depends-on "ghc")
 
 ;; Ocaml
-(depends-on "tuareg")
+;;(depends-on "tuareg")
 
 ;;;; CoffeeScript
 ;;(depends-on "coffee-mode")
