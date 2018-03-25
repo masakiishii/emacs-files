@@ -12,11 +12,11 @@
 (global-set-key [mouse-2] 'mouse-yank-at-click)
 
 ;; Mac specified setting(Meta key, input method, terminfo)
-(setq ns-command-modifier 'meta
-      ns-alternate-modifier 'super
-      ns-use-native-fullscreen nil ;; Don't use system fullscreen
-      default-input-method "MacOSX"
-      system-uses-terminfo nil)
+;; (setq ns-command-modifier 'meta
+;;       ns-alternate-modifier 'super
+;;       ns-use-native-fullscreen nil ;; Don't use system fullscreen
+;;       default-input-method "MacOSX"
+;;       system-uses-terminfo nil)
 
 ;; util setting
 (transient-mark-mode t)	                ; 選択部分のハイライト
