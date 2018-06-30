@@ -12,9 +12,12 @@
              :height 150)    ;; font size
 
 ;; Japanese font
-(set-fontset-font
- nil 'japanese-jisx0208
-  (font-spec :family "Hiragino Kaku Gothic ProN")) ;; font
+(set-fontset-font (frame-parameter nil 'font)
+                  'japanese-jisx0208
+                  (font-spec :family "IPAゴシック" :height 150))
+;;(set-fontset-font
+;; nil 'japanese-jisx0208
+;;  (font-spec :family "Hiragino Kaku Gothic ProN")) ;; font
 
 ;; Coloring
 (global-font-lock-mode +1)

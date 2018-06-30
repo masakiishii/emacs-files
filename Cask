@@ -1,6 +1,9 @@
 (source gnu)
 (source melpa)
 
+;;Haskell Intero
+(depends-on "intero")
+
 ;; apel
 ;;(depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
 
@@ -40,7 +43,8 @@
 ;;(depends-on "ace-jump-mode")
 
 ;; buffer
-(depends-on "elscreen" :git "https://github.com/emacs-jp/elscreen.git" :branch "fixed")
+;;(depends-on "elscreen" :git "https://github.com/emacs-jp/elscreen.git" :branch "fixed")
+(depends-on "elscreen")
 (depends-on "popwin")
 ;;(depends-on "buffer-move")
 
@@ -51,7 +55,7 @@
 ;;(depends-on "yascroll")
 
 ;; Scala
-(depends-on "scala-mode2"  :git "https://github.com/hvesalai/scala-mode2.git" :branch "master")
+;;(depends-on "scala-mode2"  :git "https://github.com/hvesalai/scala-mode2.git" :branch "master")
 
 ;; C#
 (depends-on "csharp-mode")
