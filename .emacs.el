@@ -15,6 +15,7 @@
  '(anzu-mode-lighter "")
  '(anzu-replace-to-string-separator " => ")
  '(anzu-search-threshold 1000)
+ '(conda-anaconda-home "~/anaconda3")
  '(package-selected-packages (quote (intero)))
  '(parens-require-spaces nil)
  '(show-paren-delay 0)

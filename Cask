@@ -1,6 +1,15 @@
 (source gnu)
 (source melpa)
 
+(depends-on "use-package")
+(depends-on "lsp-mode")
+(depends-on "lsp-ui")
+(depends-on "company-lsp")
+(depends-on "conda")
+(depends-on "python-mode")
+
+
+
 ;;Haskell Intero
 (depends-on "intero")
 

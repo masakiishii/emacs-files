@@ -15,6 +15,11 @@
 (load-theme 'reverse t t)
 (enable-theme 'reverse)
 
+(require 'use-package)
+
 ;; init-loader
 (require 'init-loader)
 (init-loader-load (concat user-emacs-directory "init_loader"))
+
+
+
