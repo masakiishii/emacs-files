@@ -17,6 +17,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <climits>
 
 typedef long long ll;
 ll mo = 1000000007;
@@ -36,11 +37,14 @@ using namespace std;
 
 class SampleClass {
 public:
-	void sampleMethod() {
-		
+	int sampleMethod() {
+		return 0;
 	}
 };
 
 int main(int argc, char **argv) {
+	SampleClass t;
+	int ret = t.sampleMethod();
+	cout << ret << endl;
 	return 0;
 }
