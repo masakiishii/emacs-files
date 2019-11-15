@@ -11,15 +11,15 @@
 
 
 ;;Haskell Intero
-(depends-on "intero")
+;;(depends-on "intero")
 
 ;; apel
-;;(depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
+(depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
 
 ;; auto-complete
 ;;(depends-on "auto-complete")
-;;(depends-on "fuzzy")
-;;(depends-on "popup")
+(depends-on "fuzzy")
+(depends-on "popup")
 
 ;; company-mode
 (depends-on "company")
@@ -55,7 +55,7 @@
 ;;(depends-on "elscreen" :git "https://github.com/emacs-jp/elscreen.git" :branch "fixed")
 (depends-on "elscreen")
 (depends-on "popwin")
-;;(depends-on "buffer-move")
+(depends-on "buffer-move")
 
 ;; Key utility
 ;;(depends-on "smartrep")
@@ -66,44 +66,10 @@
 ;; Scala
 ;;(depends-on "scala-mode2"  :git "https://github.com/hvesalai/scala-mode2.git" :branch "master")
 
-;; C#
-(depends-on "csharp-mode")
-
-;; OmniSharp
-(depends-on "omnisharp")
-
 ;; dash.el
 (depends-on "dash" :git "https://github.com/magnars/dash.el.git" :ref "2436bf8f")
 
-;; Haskell
-;;(depends-on "haskell-mode")
-;;(depends-on "ghc")
 
-;; Ocaml
-;;(depends-on "tuareg")
-
-;;;; CoffeeScript
-;;(depends-on "coffee-mode")
-;;(depends-on "sourcemap")
-;;
-;;;; Perl
-;;(depends-on "cperl-mode")
-;;(depends-on "xs-mode" :git "https://github.com/emacsmirror/xs-mode.git")
-;;
-;;;; Go
-;;(depends-on "go-mode")
-;;
-;;;; Python
-;;(depends-on "jedi")
-;;
-;;;; Ruby
-;;(depends-on "ruby-block")
-;;(depends-on "ruby-compilation")
-;;(depends-on "ruby-end")
-;;(depends-on "ruby-interpolation")
-;;(depends-on "ruby-mode")
-;;(depends-on "ruby-test-mode")
-;;(depends-on "ruby-tools")
 ;;(depends-on "inf-ruby")
 ;;
 ;;;; Programming Misc
@@ -177,12 +143,8 @@
 ;;(depends-on "ac-c-headers")
 
 ;; popwin
-;;(depends-on "import-popwin")
+(depends-on "import-popwin")
 
-;; go-mode
-;;(depends-on "go-eldoc")
-;;(depends-on "helm-godoc" :git "https://github.com/syohex/emacs-helm-godoc.git")
-;;(depends-on "golint")
 
 ;; helm
 ;;(depends-on "helm-swoop")
