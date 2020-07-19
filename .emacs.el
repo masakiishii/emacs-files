@@ -1,28 +1,9 @@
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
 (package-initialize)
 
 (load (expand-file-name (concat (getenv "HOME") "/.emacs.d/init")))
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(anzu-deactivate-region t)
- '(anzu-mode-lighter "")
- '(anzu-replace-to-string-separator " => ")
- '(anzu-search-threshold 1000)
  '(conda-anaconda-home "~/anaconda3")
  '(package-selected-packages (quote (intero)))
  '(parens-require-spaces nil)
  '(show-paren-delay 0)
  '(show-paren-style (quote expression)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

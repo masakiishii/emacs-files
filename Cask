@@ -41,18 +41,10 @@
 ;; helm
 (depends-on "helm")
 
-;; VCS
-(depends-on "git-gutter")
-(depends-on "git-gutter-fringe")
-
 
 ;; Setup
 (depends-on "init-loader")
 
 ;; Theme
 (depends-on "reverse-theme")
-
-
-;; Search
-(depends-on "anzu")
 
