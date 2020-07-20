@@ -22,9 +22,6 @@
 (depends-on "elscreen")
 (depends-on "popwin")
 
-;; Setup
-(depends-on "init-loader")
-
 ;; Theme
 (depends-on "reverse-theme")
 

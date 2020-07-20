@@ -1,1 +1,0 @@
-;; sequential-command setting(require 'sequential-command-config)(sequential-command-setup-keys)

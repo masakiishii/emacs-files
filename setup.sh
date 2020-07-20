@@ -13,9 +13,8 @@ mkdir_if_not_exist ~/.emacs.d
 EMACSDIR=${HOME}/.emacs.d
 CURRENTDIR=`pwd`
 
-ln -sf ${CURRENTDIR}/.emacs.el ${HOME}/
 
-emacsFileList=("init.el" "init_loader" "elisps" "Cask" "share" "plugins")
+emacsFileList=("init.el" "Cask" "share")
 
 for i in ${emacsFileList[*]}
 do

@@ -1,1 +1,0 @@
-;; elscreen setting(require 'elscreen)(elscreen-start)(global-unset-key "\C-o")(setq elscreen-prefix-key "\C-o")(load "elscreen" "ElScreen" t)
