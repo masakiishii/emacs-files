@@ -7,6 +7,7 @@
 (depends-on "company-lsp")
 (depends-on "conda")
 (depends-on "python-mode")
+(depends-on "ccls")
 
 
 ;; apel
