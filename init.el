@@ -220,26 +220,26 @@
 
 ;; c and c++ mode setting
 
-(add-hook 'c-mode-hook
-	  '(lambda ()
-	     (gtags-mode t)
-	     (c-set-style "linux")
-	     (setq tab-width 4)
-	     (setq indent-tabs-mode t)
-	     (setq c-basic-offset tab-width))
-	  )
+;; (add-hook 'c-mode-hook
+;; 	  '(lambda ()
+;; 	     (gtags-mode t)
+;; 	     (c-set-style "linux")
+;; 	     (setq tab-width 4)
+;; 	     (setq indent-tabs-mode t)
+;; 	     (setq c-basic-offset tab-width))
+;; 	  )
 
-(add-hook 'c++-mode-hook
-	  '(lambda ()
-	     (gtags-mode t)
-	     (c-set-style "linux")
-	     (setq tab-width 4)
-	     (setq indent-tabs-mode t)
-	     (setq c-basic-offset tab-width))
-	  )
+;; (add-hook 'c++-mode-hook
+;; 	  '(lambda ()
+;; 	     (gtags-mode t)
+;; 	     (c-set-style "linux")
+;; 	     (setq tab-width 4)
+;; 	     (setq indent-tabs-mode t)
+;; 	     (setq c-basic-offset tab-width))
+;; 	  )
 
 ;; gtags
-(autoload 'gtags-mode "gtags" "" t)
+;;(autoload 'gtags-mode "gtags" "" t)
 
 
 ;; csharp-mode
@@ -256,18 +256,18 @@
 
 
 
-;; (use-package lsp-mode
-;; 	:commands lsp)
+(use-package lsp-mode
+	:commands lsp)
 
-;; (use-package company-lsp)
-;; (use-package lsp-ui
-;; 	:config
-;; 	(add-hook 'lsp-mode-hook 'lsp-ui-mode))
+(use-package company-lsp)
+(use-package lsp-ui
+	:config
+	(add-hook 'lsp-mode-hook 'lsp-ui-mode))
 
-;; (use-package company
-;; 	:config
-;; 	(global-company-mode)
-;; 	(push 'company-lsp company-backends))
+(use-package company
+	:config
+	(global-company-mode)
+	(push 'company-lsp company-backends))
 
 (use-package python-mode
 	:config
