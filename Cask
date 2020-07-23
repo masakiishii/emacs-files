@@ -4,6 +4,7 @@
 (depends-on "use-package")
 (depends-on "lsp-mode")
 (depends-on "lsp-ui")
+(depends-on "company")
 (depends-on "company-lsp")
 
 ;;c++
@@ -14,19 +15,16 @@
 (depends-on "conda")
 (depends-on "python-mode")
 
-;; apel
+;;apel
 (depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
 
-;; company-mode
-(depends-on "company")
-
-;; sequential-command
-(depends-on "sequential-command")
-
-;; buffer
+;;buffer
 (depends-on "elscreen")
 (depends-on "popwin")
 
-;; Theme
+;;Theme
 (depends-on "doom-themes")
 
+;;misc
+(depends-on "sequential-command")
+(depends-on "beacon")

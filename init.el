@@ -263,7 +263,11 @@
 (use-package company-lsp)
 (use-package lsp-ui
 	:config
-	(add-hook 'lsp-mode-hook 'lsp-ui-mode))
+	(add-hook 'lsp-mode-hook 'lsp-ui-mode)
+	:custom
+	;; lsp-ui-imenu
+	(lsp-ui-imenu-enable nil)
+	)
 
 (use-package company
 	:config
@@ -322,3 +326,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(doom-modeline-bar ((t (:background "#6272a4")))))
+
+
+
+(use-package beacon
+  :custom
+  (beacon-color "yellow")
+  :config
+  (beacon-mode 1))
