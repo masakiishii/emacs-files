@@ -186,14 +186,10 @@
 
 
 ;; line number setting
-(require 'linum)
-(global-linum-mode t)
-(defvar linum-fomat "%4d ")
-(set-face-attribute 'linum nil
-                    :foreground "LightGoldenrod")
-;                    :foreground "lemon chiffon")
-(put 'upcase-region 'disabled nil)
-
+(use-package display-line-numbers
+  :ensure nil
+  :hook
+  ((prog-mode yaml-mode systemd-mode) . display-line-numbers-mode))
 
 
 
