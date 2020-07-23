@@ -219,24 +219,23 @@
 
 
 ;; c and c++ mode setting
+(add-hook 'c-mode-hook
+	  '(lambda ()
+	     ;;(gtags-mode t)
+	     (c-set-style "linux")
+	     (setq tab-width 4)
+	     (setq indent-tabs-mode t)
+	     (setq c-basic-offset tab-width))
+	  )
 
-;; (add-hook 'c-mode-hook
-;; 	  '(lambda ()
-;; 	     (gtags-mode t)
-;; 	     (c-set-style "linux")
-;; 	     (setq tab-width 4)
-;; 	     (setq indent-tabs-mode t)
-;; 	     (setq c-basic-offset tab-width))
-;; 	  )
-
-;; (add-hook 'c++-mode-hook
-;; 	  '(lambda ()
-;; 	     (gtags-mode t)
-;; 	     (c-set-style "linux")
-;; 	     (setq tab-width 4)
-;; 	     (setq indent-tabs-mode t)
-;; 	     (setq c-basic-offset tab-width))
-;; 	  )
+(add-hook 'c++-mode-hook
+	  '(lambda ()
+	     ;;(gtags-mode t)
+	     (c-set-style "linux")
+	     (setq tab-width 4)
+	     (setq indent-tabs-mode t)
+	     (setq c-basic-offset tab-width))
+	  )
 
 ;; gtags
 ;;(autoload 'gtags-mode "gtags" "" t)
@@ -257,7 +256,13 @@
 
 
 (use-package lsp-mode
-	:commands lsp)
+  :commands lsp
+  :general
+  (lsp-prefer-flymake 'flymake)
+  :custom
+  (lsp-prefer-capf t)
+  (company-lsp nil)
+  )
 
 (use-package company-lsp)
 (use-package lsp-ui
@@ -273,14 +278,21 @@
 	:config
 	(add-hook 'python-mode-hook #'lsp))
 
+(use-package ccls
+  :custom (ccls-executable "/usr/bin/ccls")
+  :hook ((c-mode c++-mode objc-mode) .
+         (lambda () (require 'ccls) (lsp))))
 
 (use-package conda
 	:init
 	(custom-set-variables '(conda-anaconda-home "~/anaconda3")))
 
 
-
-
+;; (use-package cc-mode
+;;   :hook (c-mode-common . (lambda ()
+;;                             (c-set-style "linux")
+;;                             (setq tab-width 4)
+;;                             (setq c-base-offset 4))))
 
 ;; elscreen setting
 (require 'elscreen)

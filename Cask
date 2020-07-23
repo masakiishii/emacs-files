@@ -5,9 +5,14 @@
 (depends-on "lsp-mode")
 (depends-on "lsp-ui")
 (depends-on "company-lsp")
+
+;;c++
+(depends-on "cc-mode")
+(depends-on "ccls")
+
+;;python
 (depends-on "conda")
 (depends-on "python-mode")
-(depends-on "ccls")
 
 
 ;; apel
