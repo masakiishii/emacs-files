@@ -2,7 +2,6 @@
 
 (custom-set-variables
  '(conda-anaconda-home "~/anaconda3")
- '(package-selected-packages (quote (intero)))
  '(parens-require-spaces nil)
  '(show-paren-delay 0)
  '(show-paren-style (quote expression)))
@@ -14,14 +13,18 @@
  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
      (normal-top-level-add-subdirs-to-load-path)))
 
-;; set emacs theme
-(require 'reverse-theme)
-(load-theme 'reverse t t)
-(enable-theme 'reverse)
-
 (require 'use-package)
 
-;; init-loader
+(use-package doom-themes
+  :custom
+  (doom-themes-enable-italic t)
+  (doom-themes-enable-bold t)
+  :custom-face
+  (doom-modeline-bar ((t (:background "#6272a4"))))
+  :config
+  (load-theme 'doom-dracula t)
+  (doom-themes-neotree-config)
+  (doom-themes-org-config))
 
 
 
@@ -197,10 +200,7 @@
 
 ;; set paren highlight
 (show-paren-mode 1)
-(custom-set-variables
-'(show-paren-delay 0)
-'(show-paren-style 'expression)
-'(parens-require-spaces nil))
+
 
 (set-face-attribute 'show-paren-match nil
 		    :background nil
@@ -320,3 +320,9 @@
 (global-set-key "\C-cu" 'uncomment-region)
 (global-set-key "\C-q" 'set-mark-command)
 (windmove-default-keybindings)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(doom-modeline-bar ((t (:background "#6272a4")))))

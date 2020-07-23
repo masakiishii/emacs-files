@@ -14,7 +14,6 @@
 (depends-on "conda")
 (depends-on "python-mode")
 
-
 ;; apel
 (depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
 
@@ -29,5 +28,5 @@
 (depends-on "popwin")
 
 ;; Theme
-(depends-on "reverse-theme")
+(depends-on "doom-themes")
 
