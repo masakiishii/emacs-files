@@ -73,7 +73,7 @@
 (setq truncate-partial-width-windows t)
 
 (set-face-attribute 'default nil
-		    :height 150)
+		    :height 110)
 
 (set-frame-parameter nil 'fullscreen 'maximized)
 
@@ -215,23 +215,6 @@
 
 
 ;; c and c++ mode setting
-(add-hook 'c-mode-hook
-	  '(lambda ()
-	     ;;(gtags-mode t)
-	     (c-set-style "linux")
-	     (setq tab-width 4)
-	     (setq indent-tabs-mode t)
-	     (setq c-basic-offset tab-width))
-	  )
-
-(add-hook 'c++-mode-hook
-	  '(lambda ()
-	     ;;(gtags-mode t)
-	     (c-set-style "linux")
-	     (setq tab-width 4)
-	     (setq indent-tabs-mode t)
-	     (setq c-basic-offset tab-width))
-	  )
 
 ;; gtags
 ;;(autoload 'gtags-mode "gtags" "" t)
@@ -258,6 +241,7 @@
   :custom
   (lsp-prefer-capf t)
   (company-lsp nil)
+  ;;(lsp-enable-indentation nil)
   )
 
 (use-package company-lsp)
@@ -286,6 +270,25 @@
 (use-package conda
 	:init
 	(custom-set-variables '(conda-anaconda-home "~/anaconda3")))
+
+
+(add-hook 'c-mode-hook
+	  '(lambda ()
+	     ;;(gtags-mode t)
+	     (c-set-style "linux")
+	     (setq tab-width 4)
+	     (setq indent-tabs-mode t)
+	     (setq c-basic-offset tab-width))
+	  )
+
+(add-hook 'c++-mode-hook
+	  '(lambda ()
+	     ;;(gtags-mode t)
+	     (c-set-style "linux")
+	     (setq tab-width 4)
+	     (setq indent-tabs-mode t)
+	     (setq c-basic-offset tab-width))
+	  )
 
 
 ;; (use-package cc-mode
@@ -319,6 +322,7 @@
 (global-set-key "\C-cc" 'comment-region)
 (global-set-key "\C-cu" 'uncomment-region)
 (global-set-key "\C-q" 'set-mark-command)
+(global-set-key "\C-j" 'newline-and-indent)
 (windmove-default-keybindings)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
