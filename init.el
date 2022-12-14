@@ -65,7 +65,14 @@
 ;; window
 (if (boundp 'window-system)
     (setq initial-frame-alist
-          (append (list '(alpha . 85)) initial-frame-alist)))
+          (append (list
+		   '(alpha . 85)
+		   '(width . 120)
+		   '(height . 50)
+		   '(top . 0)
+		   '(left . 600)
+		   )
+		  initial-frame-alist)))
 (if window-system (set-scroll-bar-mode 'right))
 (file-name-shadow-mode t)
 (setq default-frame-alist initial-frame-alist)
@@ -75,7 +82,7 @@
 (set-face-attribute 'default nil
 		    :height 110)
 
-(set-frame-parameter nil 'fullscreen 'maximized)
+;;(set-frame-parameter nil 'fullscreen 'maximized)
 
 
 ;; set a higher limit for recursion

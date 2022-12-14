@@ -1,5 +1,6 @@
 (source gnu)
 (source melpa)
+(source org)
 
 (depends-on "use-package")
 (depends-on "lsp-mode")
@@ -16,7 +17,8 @@
 (depends-on "python-mode")
 
 ;;apel
-(depends-on "elscreen" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
+(depends-on "apel" :git "https://github.com/wanderlust/apel.git" :branch "apel-wl")
+
 
 ;;buffer
 (depends-on "elscreen")
