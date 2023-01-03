@@ -70,7 +70,7 @@
 		   '(width . 120)
 		   '(height . 50)
 		   '(top . 0)
-		   '(left . 600)
+		   '(left . 750)
 		   )
 		  initial-frame-alist)))
 (if window-system (set-scroll-bar-mode 'right))
